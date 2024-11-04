@@ -2,7 +2,7 @@ from main import SearchEngine
 import pandas as pd
 import os
 import google.generativeai as genai
-google_gemini_api = "AIzaSyBN4k_ZQoBhNbBdHB7PHGWRL6PD_gHQ5Yk"
+google_gemini_api = "API_KEY"
 
 class GenAIClient:
     def __init__(self, google_gemini_api=google_gemini_api):
