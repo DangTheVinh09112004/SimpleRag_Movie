@@ -7,28 +7,6 @@ app = Flask(__name__)
 conversation_history = ConversationHistory()
 summary_memory = SummarizedMemory()
 @app.route('/api/vinh_dep_trai/chat', methods=['POST'])
-#def ask_question():
-#    data = request.get_json()
-#    query = data.get('query', '')
-#    context_summary = summary_memory.get_current_summary()
-#    if context_summary == "Chưa có tóm tắt nào.":
-#        recent_messages = summary_memory.get_recent_message(conversation_history)
-#        if recent_messages:
-#            context_text = "\n".join(
-#                [f"{msg['questions']}: {msg['contents']}" for msg in recent_messages]
-#            )
-#            full_context = f"Hội thoại gần nhất: {context_text}\n\nCâu hỏi mới: {query}"
-#        else:
-#            full_context = f"{query}"
-#    else:
-#        full_context = f"Hội thoại gần nhất: {context_summary}\n\nCâu hỏi mới: {query}"
-
-#    print(full_context)
-#    response = Rag(questions=full_context).generate_text()
-#    conversation_history.add_messages(query, response)
-#    summary_memory.summarize_if_threshold_met(conversation_history)
-
-#    return jsonify({"response": response})
 
 def ask_question():
     data = request.get_json()
